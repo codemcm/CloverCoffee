@@ -4,6 +4,7 @@ PracticaSergio
     Pre requisitos
 
 Software:
+xampp
 Vs code
 python
 git 
