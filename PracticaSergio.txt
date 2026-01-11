@@ -1,11 +1,18 @@
 PracticaSergio
 
+
+    Pre requisitos
+
+Software:
+Vs code
+python
+git 
+
+Para git:
 1 Crear cuenta Github
 2 [Instalar git si su internet lo permite]
 3 Clonar repo de la liga: https://github.com/codemcm/CloverCoffee
 4 Crear el metodo de listar para cliente
-
-
 
 
 Codificar
