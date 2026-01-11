@@ -44,6 +44,21 @@ class ProbarVersion:
                 
         except Exception as e:
             print(f"✗ Error durante la prueba: {e}")
+            
+    def probarListar(self):
+        try:
+            print("\nListando versiones...")
+            resultado = self.logic.listar_versiones()
+            
+            if resultado:
+                print(f"✓ Se encontraron {len(resultado)} versión(es):")
+                for version in resultado:
+                    print(f"  - {version}")
+            else:
+                print("No hay versiones registradas")
+                
+        except Exception as e:
+            print(f"✗ Error al listar versiones: {e}")
 
 
 # Ejecutar prueba si se ejecuta directamente
@@ -52,5 +67,6 @@ if __name__ == "__main__":
     
     prueba = ProbarVersion()
     prueba.probar_insercion()
+    prueba.probarListar()
     
     print("\n=== Fin de la prueba ===")

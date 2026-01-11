@@ -1,0 +1,22 @@
+PracticaSergio
+
+1 Crear cuenta Github
+2 [Instalar git si su internet lo permite]
+3 Clonar repo de la liga: https://github.com/codemcm/CloverCoffee
+4 Crear el metodo de listar para cliente
+
+
+
+
+Codificar
+1. Crear ClienteDto
+2.Crear Clase ClienteLogic
+3. Crear clase ProbarCliente
+
+
+
+Git Commands
+
+git add .
+git commit -m "descripcion de los cambios"
+git push 

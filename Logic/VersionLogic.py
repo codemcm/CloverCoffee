@@ -61,18 +61,18 @@ class VersionLogic:
         """
         try:
             with MysqlConnector() as db:
-                sql = "SELECT * FROM versiones WHERE activo = 1 LIMIT 1"
+                sql = "SELECT * FROM version WHERE Activo = 1 LIMIT 1"
                 cursor = db.consulta_retorno(sql)
                 
                 row = cursor.fetchone()
                 if row:
                     return Version(
-                        version_id=row['version_id'],
-                        version_bd=row['version_bd'],
-                        version_sistema=row['version_sistema'],
-                        descripcion=row['descripcion'],
-                        fecha_instalacion=row['fecha_instalacion'],
-                        activo=bool(row['activo'])
+                        VersionId=row['VersionId'],
+                        VersionBd=row['VersionBD'],
+                        VersionSistema=row['VersionSistema'],
+                        Descripcion=row['Descripcion'],
+                        FechaInstalacion=row['FechaInstalacion'],
+                        Activo=bool(row['Activo'])
                     )
                 return None
                 
@@ -88,18 +88,18 @@ class VersionLogic:
         """
         try:
             with MysqlConnector() as db:
-                sql = "SELECT * FROM versiones ORDER BY fecha_instalacion DESC"
+                sql = "SELECT * FROM version ORDER BY FechaInstalacion DESC"
                 cursor = db.consulta_retorno(sql)
                 
                 versiones = []
                 for row in cursor:
                     version = Version(
-                        version_id=row['version_id'],
-                        version_bd=row['version_bd'],
-                        version_sistema=row['version_sistema'],
-                        descripcion=row['descripcion'],
-                        fecha_instalacion=row['fecha_instalacion'],
-                        activo=bool(row['activo'])
+                        VersionId=row['VersionId'],
+                        VersionBd=row['VersionBD'],
+                        VersionSistema=row['VersionSistema'],
+                        Descripcion=row['Descripcion'],
+                        FechaInstalacion=row['FechaInstalacion'],
+                        Activo=bool(row['Activo'])
                     )
                     versiones.append(version)
                 
