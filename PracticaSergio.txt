@@ -4,13 +4,13 @@ PracticaSergio
     Pre requisitos
 
 Software:
-xampp
-Vs code
-python
-git 
+xampp: https://www.apachefriends.org/es/download.html
+Vs code https://code.visualstudio.com/download
+python https://www.python.org/downloads/
+git https://git-scm.com/install/windows
 
 Para git:
-1 Crear cuenta Github
+1 Crear cuenta Github: https://github.com/
 2 [Instalar git si su internet lo permite]
 3 Clonar repo de la liga: https://github.com/codemcm/CloverCoffee
 4 Crear el metodo de listar para cliente
