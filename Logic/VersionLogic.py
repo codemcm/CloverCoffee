@@ -13,22 +13,9 @@ class VersionLogic:
     """Clase de lógica de negocio para gestionar versiones del sistema"""
     
     def __init__(self):
-        """Inicializa la lógica de versiones"""
         pass
     
     def insertar_version(self, version: Version) -> bool:
-        """
-        Inserta una nueva versión en la base de datos
-        
-        Args:
-            version: Objeto Version con los datos a insertar
-            
-        Returns:
-            True si la inserción fue exitosa, False en caso contrario
-            
-        Raises:
-            Exception: Si ocurre un error durante la inserción
-        """
         try:
             # Crear conexión a la base de datos
             with MysqlConnector() as db:
